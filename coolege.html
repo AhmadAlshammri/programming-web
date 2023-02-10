@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewpart" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <meta name="author" content="">
+    <title>خريطتك لكليات شقراء</title>
+    <link rel="icon" type="image/x-icon" href="new.jpeg">
+    <script src="jqueary.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="colleg.css">
+    <style>
+        body {
+            background-image: url("fff.jpeg");
+            accent-color: black;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav {
+            width: 100%;
+            height: 100px;
+        }
+        
+        ul li {
+            list-style: none;
+            display: inline-block;
+            float: right;
+            line-height: 100px;
+            padding: 0 40px;
+        }
+        
+        .maddel {
+            margin: 0 auto;
+            width: 1000px;
+            background-color: #bb9a6d;
+            border-radius: 20px;
+            width: 50%;
+        }
+        
+        .maddel:hover {
+            background-color: rgb(244, 238, 238);
+        }
+        
+        ul li a {
+            text-decoration: none;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+        }
+        
+        ul li a:hover {
+            color: rgb(8, 58, 8);
+        }
+        
+        .dropbtn {
+            background-color: #04AA6D;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 20px;
+            width: 230px;
+            font-size: 30px;
+        }
+        /* Dropdown button on hover & focus */
+        
+        .dropbtn:hover,
+        .dropbtn:focus {
+            background-color: #0a420c;
+            color: #bb9a6d;
+        }
+        /* The search field */
+        
+        #myInput {
+            box-sizing: border-box;
+            background-image: url('searchicon.png');
+            background-position: 14px 12px;
+            background-repeat: no-repeat;
+            font-size: 16px;
+            padding: 14px 20px 12px 45px;
+            border: none;
+            border-bottom: 1px solid #ddd;
+        }
+        /* The search field when it gets focus/clicked on */
+        
+        #myInput:focus {
+            outline: 3px solid #ddd;
+        }
+        /* The container <div> - needed to position the dropdown content */
+        
+        .dropdown {
+            position: absolute;
+            display: inline-block;
+            left: 75%;
+            top: 20%;
+            border-radius: 20px;
+        }
+        /* Dropdown Content (Hidden by Default) */
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f6f6f6;
+            min-width: 230px;
+            border: 1px solid #ddd;
+            z-index: 1;
+        }
+        /* Links inside the dropdown */
+        
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        /* Change color of dropdown links on hover */
+        
+        .dropdown-content a:hover {
+            background-color: #f1f1f1
+        }
+        /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+        
+        .show {
+            display: block;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div id="mainbox" onclick="openfunction()">&#9776;<img src="new.jpeg" align="top_left" alt="docoment"></div>
+
+    <div id="menu" class="mid">
+        <nav>
+            <a href="j.html" id="active">  الرئيسية</a><br>
+            <a href="coolege.html"> الكليات </a><br>
+            <a href="#"> التقويم الدراسي</a><br>
+            <a href="" class="closebtn" onclick="closefunction()">&times;</a><br><br>
+        </nav>
+    </div>
+    <div class="maddel">
+        <nav>
+            <ul>
+                <li><a href="#">  جامعة شقراء</li>
+                <li><a href="#">تعرف علينا</li>
+                <li><a href="#"> تواصل</li>
+                <li><a href="#">عن الجامعه</li>
+
+            </ul>
+                
+        </nav> 
+    </div>
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn"> الكليات </button>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="rt.html">كليةالحاسب الالي</a>
+                    <a href="#contact"> كليةالطب</a>
+                    <a href="#custom">  كلية العلوم التطبيقية</a>
+                    <a href="#support">  كلية ادارة الاعمال</a>
+                    <a href="#tools"> كلية التربية</a>
+    </div>
+    </div>
+
+    <script>
+        /* When the user clicks on the button,
+                                                                                                        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+    </script>

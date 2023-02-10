@@ -1,0 +1,61 @@
+#menu {
+    transition: 0, 4s;
+}
+
+.mid {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 0px;
+    background-image: url("new.jpeg");
+    z-index: 1;
+    padding-top: 100px;
+    overflow: hidden;
+    transition: all 0, 2;
+}
+
+.mid a {
+    padding: 10px;
+    font-size: 25px;
+    color: black;
+    display: block;
+    text-decoration: none;
+}
+
+.mid a:hover {
+    transition: 0.2;
+    color: black;
+}
+
+.mid .closebtn {
+    color: rgba(19, 18, 18, 0.979);
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 50px;
+    margin-left: 30px;
+    text-decoration: none;
+}
+
+#mainbox {
+    width: 60px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 8px;
+    color: rgb(28, 80, 28);
+    top: 0;
+    left: 20%;
+    background-image: url("new.jpeg");
+}
+
+#mainbox img {
+    width: 20px;
+    height: 20px;
+}
+
+#active {
+    color: white;
+    background-color: black;
+}
